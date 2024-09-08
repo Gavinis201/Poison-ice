@@ -11,16 +11,6 @@ body{
   box-sizing: border-box;
   font-family: 'lato', sans-serif;
 }
-
-
-.nav-1{
-background-color: #3d8e39!important;
-border-style: solid;
-border-color:var(--secondary);
-color: white !important;
-}
-
-
 /* Reset basic styles */
 * {
   margin: 0;
@@ -34,7 +24,27 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
-/* Container for the landing page content */
+/* --------------Header styles------------ */
+
+.nav-1{
+background-color: #3d8e39!important;
+border-style: solid;
+border-color:var(--secondary);
+}
+/* Header styling */
+.header h1 {
+  font-size: 3rem;
+}
+.header p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.nav-1:hover{
+  color: white;
+}
+
+/* ----------- INDEX.HTML PAGE!!!!!--------- */
+
 .landing-container {
   display: flex;
   flex-direction: column;
@@ -47,14 +57,12 @@ html, body {
   /* border: 1px, white, solid; */
   padding: 100px;
 }
-
 .bottles{
   display: flex;
   flex-direction: row;
   gap: 30px;
   margin: 2em;
 }
-
 .bottle{
   display: flex;
   flex-direction: row;
@@ -65,35 +73,40 @@ html, body {
   box-shadow: .1px .1px 6px .1px  white;
   cursor: pointer;
 }
-
-/* Header styling */
-.header h1 {
-  font-size: 3rem;
-}
-
-.header p {
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-/* Call to action button */
+/* Call to action button MAIN PAGE*/
 .cta-button {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: white;
-  color: #4CAF50;
+  color: var(--secondary);
   text-decoration: none;
   border-radius: 5px;
   font-size: 1.2rem;
   transition: background-color 0.3s ease;
 }
-
 .cta-button:hover {
   background-color: #388E3C;
   color: white;
 }
+.info-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--secondary);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+.info-button:hover {
+  background-color: white;
+  color: var(--primary);
+}
 
 
+
+
+/* -----------PRICES.HTML PAGES  CSS ------------- */
 
 .prices-container{
 height: 90vh;
@@ -101,7 +114,6 @@ display: flex;
 flex-direction: row;
 background-image: url(./images/Poison\ Ice\ Wallpaper.png);
 }
-
 .one-pack-container {
  width: 40%;
  display: flex;
@@ -109,8 +121,9 @@ background-image: url(./images/Poison\ Ice\ Wallpaper.png);
  justify-content: center;
  align-items: center;
  color: white;
-}
+ border: 1px solid white;
 
+}
 .three-pack-container {
  width: 60%;
  display: flex;
@@ -118,20 +131,82 @@ background-image: url(./images/Poison\ Ice\ Wallpaper.png);
  justify-content: center;
  align-items: center;
  color: white;
- 
+ border:1px  solid white;
 }
 .threepack-header{
 display: flex;
 flex-direction: rorw;
 justify-content: center;
 align-items: center;
+gap: 10px;
 }
 
-
+/* -----------contact.html page---------- */
+.poison-info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2em;
+  align-items: center;
+  color: white;
+  border: 1px solid white;
+}
+.bullet-points {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.bullet-alignment-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+  margin-left: 0;
+}
+.input-container{
+  width: 100%;
+  padding: 1em;
+  color: white;
+  background-image: url(./images/Poison\ Ice\ Wallpaper.png);
+}
+.form {
+  display: block;
+  margin-left: 30%;
+  
+  
+}
+.quantity{
+  display: inline;
+}
+/* -------------ABOUT.HTML------------ */
+.about-container{
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  background-image: url(./images/Poison\ Ice\ Wallpaper.png);
+  }
+  .poison-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 2em;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+  }
+.input-text{
+  display: flex;
+  justify-content: center;
+}
+/* --------------FOOTER ------------- */
 footer {
   position: relative;
   color:  white;
   height: 5em;
+  opacity: 50%;
   /* border: 1px, solid, rgb(240, 236, 236); */
   background: linear-gradient(to bottom,#1f1e1b,rgb(38, 38, 36) ); 
 }
