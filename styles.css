@@ -121,17 +121,14 @@ background-image: url(./images/Poison\ Ice\ Wallpaper.png);
  justify-content: center;
  align-items: center;
  color: white;
- border: 1px solid white;
-
 }
 .three-pack-container {
- width: 60%;
+ width: 70%;
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
  color: white;
- border:1px  solid white;
 }
 .threepack-header{
 display: flex;
@@ -186,8 +183,9 @@ gap: 10px;
   display: flex;
   flex-direction: row;
   background-image: url(./images/Poison\ Ice\ Wallpaper.png);
+  padding-top: 50px;
   }
-  .poison-info {
+  .poison-information {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -195,7 +193,6 @@ gap: 10px;
     padding: 2em;
     align-items: center;
     color: white;
-    border: 1px solid white;
   }
 .input-text{
   display: flex;
