@@ -171,11 +171,15 @@ gap: 10px;
 .form {
   display: block;
   margin-left: 30%;
-  
-  
 }
-.quantity{
-  display: inline;
+.bottle-contact{
+  border-radius: 60px;
+  height: 30vh;
+}
+.bottle-contact:hover{
+  box-shadow: .1px .1px 6px .1px  white;
+  cursor: pointer;
+  
 }
 /* -------------ABOUT.HTML------------ */
 .about-container{

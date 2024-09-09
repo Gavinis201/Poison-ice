@@ -53,16 +53,19 @@ gsmith19 -->
     <section>
         <div class="input-container">
           <div class="">
-            <h4>Simply fill out the order form below with the number of bottles you'd like and your contact details. Once we receive your order, we'll reach out to you directly to arrange a convenient time for delivery. Thank you!</h4>
+            <h4 class="row d-flex justify-content-center">Fill out the order form below with the number of bottles you'd like and your contact details.</h4>
+              <p class="row d-flex justify-content-center">Once we receive your order, we'll reach out to you directly to arrange a convenient time for delivery. Thank you</p>
           </div>
-          <div class="quantity">
-            <img src="./images/Picture1.svg" height="200px" style="border-radius: 60px; padding: 2em;" alt="poison ice bottle">
-            <label for="number">Quantity</label>
+          <div class="d-flex flex-column align-items-center"><br>
+            <a href="./about.html"><img src="./images/Picture1.svg" title="More Information" class="bottle-contact" alt="Bottle"></a>
+            <br>
+            <label for="quantity">Quantity</label>
             <input type="number" class="rounded" style="height: 2em; width: 60px;" id="quantity" placeholder="0" required>
             <h6>Each bottle is $10.99</h6>
-          </div>
+        </div>
+
           <div><br>
-            <div class="row" >
+            <div class="row d-flex justify-content-center" >
               <div class="col col-md-3">
                 <label for="inputEmail4">Email</label>
                 <input type="email" class="form-control" id="inputEmail4" required >
@@ -72,9 +75,10 @@ gsmith19 -->
                 <input type="tel" class="form-control" id="phonenumber" required>
               </div>
             </div><br><br>
-            <div class="col-md-6">
-              <textarea rows="4" cols="50" name="comment" form="usrform"></textarea>
+            <div class="col d-flex justify-content-center">
+              <textarea class="rounded" rows="4" cols="50" name="comment" form="usrform" placeholder="Address..." required></textarea>
             </div>
+            
           <br>
           <button type="submit" id="submitOrder" onclick="submitOrder()" class="info-button">Submit order</button>
         </div>
