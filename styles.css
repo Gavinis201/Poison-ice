@@ -80,6 +80,7 @@ border-color:var(--secondary);
   background-color: white;
   color: var(--secondary);
   text-decoration: none;
+  border: 1px solid white;
   border-radius: 5px;
   font-size: 1.2rem;
   transition: background-color 0.3s ease;
@@ -87,6 +88,7 @@ border-color:var(--secondary);
 .cta-button:hover {
   background-color: #388E3C;
   color: white;
+  border: 1px solid var(--secondary);
 }
 .info-button {
   margin-top: 20px;
@@ -140,7 +142,6 @@ gap: 10px;
 
 /* -----------contact.html page---------- */
 .poison-info {
-  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -163,22 +164,74 @@ gap: 10px;
   margin-left: 0;
 }
 .input-container{
-  width: 100%;
-  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8em;
+  padding: 6em;
   color: white;
   background-image: url(./images/Poison\ Ice\ Wallpaper.png);
 }
-.form {
-  display: block;
-  margin-left: 30%;
+
+.purchase{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  border: 1px, solid, white;
+  padding: 4em;
 }
-.bottle-contact{
-  border-radius: 60px;
-  height: 30vh;
+.contact-ice-1{
+  border-radius: 50px;
+  height: 250px;
+  aspect-ratio: 9/9;
 }
-.bottle-contact:hover{
-  box-shadow: .1px .1px 6px .1px  white;
-  cursor: pointer;
+.contact-ice-2{
+  border-radius: 40px;
+  height: 250px;
+  aspect-ratio: 9/9;
+}
+.contact-ice-3{
+  border-radius: 40px;
+  height: 250px;
+  aspect-ratio: 9/9;
+}
+.contact-ice-4{
+  border-radius: 40px;
+  height: 250px;
+  aspect-ratio: 40/10;
+}
+.purchase-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  width: 50%;
+}
+.star{
+  display: flex;
+  flex-direction: row;
+}
+.review{
+  color: var(--secondary);
+}
+.review:hover{
+  color: white;
+}
+
+.contact-button {
+  background-color: #388E3C;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  height: 2em;
+  width: 6em;
+  font-size: 1.5em;
+  transition: background-color 0.3s ease;
+}
+.contact-button:hover {
+  background-color: white;
+  color: var(--secondary);
   
 }
 /* -------------ABOUT.HTML------------ */
@@ -190,7 +243,6 @@ gap: 10px;
   padding-top: 50px;
   }
   .poison-information {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
