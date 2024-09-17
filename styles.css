@@ -207,7 +207,7 @@ gap: 10px;
   .prices-container {
     flex-direction: column;
     padding: 0;
-    height: 100vh;
+    height: auto;
   }
   .one-pack-container{
     width: 100%;
