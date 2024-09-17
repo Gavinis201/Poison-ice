@@ -260,6 +260,9 @@ gap: 10px;
   .contact-ice-3 {
     display: none;
   }
+  .contact-ice-1 {
+    border-radius: 50px;
+  }
 }
 
 
