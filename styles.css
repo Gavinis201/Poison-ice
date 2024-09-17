@@ -306,6 +306,7 @@ background: linear-gradient(to bottom,#1f1e1b,rgb(38, 38, 36) );
   .footer{
     display: flex;
     flex-direction: column;
+    background: none;
   }
 
 }
