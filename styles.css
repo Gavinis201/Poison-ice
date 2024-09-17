@@ -210,11 +210,11 @@ gap: 10px;
     height: auto;
   }
   .one-pack-container{
-    width: 100%;
+    width: auto;
     margin: 1em;
   }
   .three-pack-container{
-    width: 100%;
+    width: auto;
     margin: 1em;
   }
 
