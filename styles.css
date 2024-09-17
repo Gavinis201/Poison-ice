@@ -78,7 +78,7 @@ border-color:var(--secondary);
   display: flex;
   flex-direction: row;
   border-radius: 50px;
-  height: 12em;
+  height: 300px;
 } 
 .bottle-2:hover{
   box-shadow: .1px .1px 6px .1px  white;
