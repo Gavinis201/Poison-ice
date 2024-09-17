@@ -261,7 +261,9 @@ gap: 10px;
     display: none;
   }
   .contact-ice-1 {
-    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 70px;
   }
 }
 
@@ -287,19 +289,23 @@ gap: 10px;
   justify-content: center;
 }
 /* --------------FOOTER ------------- */
-footer {
-  position: relative;
-  color:  white;
-  height: 5em;
-  opacity: 50%;
-  /* border: 1px, solid, rgb(240, 236, 236); */
-  background: linear-gradient(to bottom,#1f1e1b,rgb(38, 38, 36) ); 
-}
+
 .footer {
 display: flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
-padding-left: 10em;
-padding-right: 10em;
+text-decoration: none;
+padding: .75em;
+opacity: 90%;
+color: white;
+background: linear-gradient(to bottom,#1f1e1b,rgb(38, 38, 36) ); 
+}
+
+@media screen and (max-width: 500px) {
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+
 }
